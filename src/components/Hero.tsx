@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import Reveal from '@/components/Reveal';
-import Logo from '@/components/Logo';
 import { herbPath } from '@/data/extracts';
 
 const WITHANIA = 'Withania somnifera';
@@ -42,10 +41,7 @@ export default function Hero() {
             aria-label="Sample specification"
             className="absolute -bottom-10 left-4 right-4 rounded-2xl border-2 border-primary-600 bg-white p-6 shadow-lg sm:-left-8 sm:right-auto sm:w-[21rem]"
           >
-            <div className="flex items-center justify-between gap-3">
-              <p className="text-xs font-bold uppercase tracking-wider text-neutral-600">Sample specification</p>
-              <Logo compact />
-            </div>
+            <p className="text-xs font-bold uppercase tracking-wider text-neutral-600">Sample specification</p>
             <Link
               to={herbPath(WITHANIA)}
               className="group mt-2 inline-flex items-center gap-2 text-2xl italic text-secondary-700 hover:underline"
